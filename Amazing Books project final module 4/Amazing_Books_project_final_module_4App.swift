@@ -12,6 +12,7 @@ struct Amazing_Books_project_final_module_4App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(BookModel())
         }
     }
 }

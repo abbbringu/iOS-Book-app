@@ -11,6 +11,13 @@
 		D30F12AE2937BD6B00689353 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F12AD2937BD6B00689353 /* ContentView.swift */; };
 		D30F12B02937BD6B00689353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D30F12AF2937BD6B00689353 /* Assets.xcassets */; };
 		D30F12B32937BD6B00689353 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D30F12B22937BD6B00689353 /* Preview Assets.xcassets */; };
+		D30F12C02937BEEA00689353 /* book.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F12BF2937BEEA00689353 /* book.swift */; };
+		D30F12C22937BF7100689353 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F12C12937BF7100689353 /* BookModel.swift */; };
+		D30F12C42937BFB800689353 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F12C32937BFB800689353 /* DataService.swift */; };
+		D30F12C62937C5AD00689353 /* BookData.json in Resources */ = {isa = PBXBuildFile; fileRef = D30F12C52937C5AD00689353 /* BookData.json */; };
+		D30F12C82937C75100689353 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F12C72937C75100689353 /* Card.swift */; };
+		D30F12CA2937CCF000689353 /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F12C92937CCF000689353 /* DetailedView.swift */; };
+		D30F12CC2937E0E200689353 /* readingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F12CB2937E0E200689353 /* readingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		D30F12AD2937BD6B00689353 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D30F12AF2937BD6B00689353 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D30F12B22937BD6B00689353 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D30F12BF2937BEEA00689353 /* book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book.swift; sourceTree = "<group>"; };
+		D30F12C12937BF7100689353 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		D30F12C32937BFB800689353 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		D30F12C52937C5AD00689353 /* BookData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BookData.json; sourceTree = "<group>"; };
+		D30F12C72937C75100689353 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		D30F12C92937CCF000689353 /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
+		D30F12CB2937E0E200689353 /* readingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				D30F12AB2937BD6B00689353 /* Amazing_Books_project_final_module_4App.swift */,
-				D30F12AD2937BD6B00689353 /* ContentView.swift */,
+				D30F12BB2937BE7300689353 /* ViewModel */,
+				D30F12BA2937BE6700689353 /* Model */,
+				D30F12B92937BE5C00689353 /* View */,
+				D30F12BC2937BE8200689353 /* Data */,
 				D30F12AF2937BD6B00689353 /* Assets.xcassets */,
 				D30F12B12937BD6B00689353 /* Preview Content */,
 			);
@@ -65,6 +82,42 @@
 				D30F12B22937BD6B00689353 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D30F12B92937BE5C00689353 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D30F12AD2937BD6B00689353 /* ContentView.swift */,
+				D30F12C72937C75100689353 /* Card.swift */,
+				D30F12C92937CCF000689353 /* DetailedView.swift */,
+				D30F12CB2937E0E200689353 /* readingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D30F12BA2937BE6700689353 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D30F12BF2937BEEA00689353 /* book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D30F12BB2937BE7300689353 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D30F12C12937BF7100689353 /* BookModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D30F12BC2937BE8200689353 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D30F12C52937C5AD00689353 /* BookData.json */,
+				D30F12C32937BFB800689353 /* DataService.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +180,7 @@
 			files = (
 				D30F12B32937BD6B00689353 /* Preview Assets.xcassets in Resources */,
 				D30F12B02937BD6B00689353 /* Assets.xcassets in Resources */,
+				D30F12C62937C5AD00689353 /* BookData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +192,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D30F12AE2937BD6B00689353 /* ContentView.swift in Sources */,
+				D30F12CC2937E0E200689353 /* readingView.swift in Sources */,
+				D30F12C82937C75100689353 /* Card.swift in Sources */,
 				D30F12AC2937BD6B00689353 /* Amazing_Books_project_final_module_4App.swift in Sources */,
+				D30F12C22937BF7100689353 /* BookModel.swift in Sources */,
+				D30F12CA2937CCF000689353 /* DetailedView.swift in Sources */,
+				D30F12C02937BEEA00689353 /* book.swift in Sources */,
+				D30F12C42937BFB800689353 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
